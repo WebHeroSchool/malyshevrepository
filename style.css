@@ -1,7 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@700&display=swap');
-body {
-font-family: 'Oswald', sans-serif;	
+@media (min-width:320px) {
+	.header__title {
+		font-size: 15px;
+	}
+	.header__text {
+		font-size: 10px;
+	}
 }
-.header__title {
-font-family: 'Lobster', cursive;	
+
+@media (min-width:481px) {
+	.header__title {
+		font-size: 25px;
+	}
+	.header__text {
+		font-size: 20px;
+	}
+}
+
+@media (min-width:641px) {
+	.header__title {
+		font-size: 35px;
+	}
+	.header__text {
+		font-size: 30px;
+	}
+}
+
+@media (min-width:961px) {
+	.header__title {
+		font-size: 45px;
+	}
+	.header__text {
+		font-size: 40px;
+	}
+}
+
+@media (min-width:1025px) {
+	.header__title {
+		font-size: 55px;
+	}
+	.header__text {
+		font-size: 50px;
+	}
+}
+
+@media (min-width:1281px) {
+	.header__title {
+		font-size: 65px;
+	}
+	.header__text {
+		font-size: 60px;
+	}
 }
