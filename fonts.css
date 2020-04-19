@@ -1,5 +1,7 @@
 @font-face {
-	font-family: "Montserrat-Medium";
-	src: url("C:\Users\Admin\Desktop\fonts\Montserrat-Medium.ttf") format("truetype"),
-	url("C:\Users\Admin\Desktop\fonts\montserrat-medium-webfont.woff2") format("woff2");
+	font-family: "Montserrat";
+	src: url("Montserrat-Medium.ttf") format("truetype"),
+	     url("montserrat-medium-webfont.woff2") format("woff2");
+	font-weight: normal;
+    font-style: normal;
 }
