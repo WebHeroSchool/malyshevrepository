@@ -10,10 +10,12 @@ body {
     box-sizing: border-box;
 }
 
-/* Container */
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
+/* Conteiner */
+.conteiner {
+	width: 100%;
+	max-width: 1470px;
+	padding: 0 15px;
+	margin: 0 auto;
 }
 
 /* header */
@@ -24,6 +26,9 @@ body {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+.header__logo2 {
+	display: none;
 }
 
 .nav {
@@ -37,7 +42,6 @@ body {
 	position: relative;
 	color: #000000;
 	text-decoration: none;
-	transition: color .1s linear;
 }
 .nav__link:after {
 	content: "";
@@ -54,8 +58,12 @@ body {
 .nav__link:hover {
 	color: #E51937;
 }
-.nav__link:hover:after {
+.nav__link:hover:after,
+.nav__link.active:after {
 	opacity: 1;
+}
+.nav__link.active {
+	color: #E51937;
 }
 .nav__burger {
 	display: inline-block;
@@ -90,11 +98,14 @@ body {
 .intro__text {
 	text-align: center;
 	font-size: 15px;
-	margin-bottom: 0;
+	margin-bottom: 15px;
 }
 .intro__img {
 	display: flex;
 	justify-content: center;
+}
+.intro__ipad, .intro__mobile {
+	display: none;
 }
 .intro__features {
 	display: flex;
@@ -106,6 +117,9 @@ body {
 	display: flex;
 	align-items: center;
 	margin-right: 14px;
+}
+.features__ipad, .features__mobile, .road__ipad, .road__mobile {
+	display: none;
 }
 .features__items {
 	margin-right: 77px;
@@ -137,31 +151,133 @@ body {
 	align-items: center;
 	margin-right: 39px;
 }
+.testdrive__ipad, .testdrive__mobile {
+	display: none;
+}
 .features__order {
 	display: flex;
 	align-items: center;
 }
 .btn {
 	display: inline-block;
-    padding: 10px 42px;
+	padding: 10px 42px;
 
-    border: 2px solid #E51937;
+	border: 2px solid #E51937;
 
-    font-size: 13px;
-    font-weight: bold;
-    color: #E51937;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    transition: background .1s linear, color .1s linear;
-}
-
-.btn:hover {
-    background-color: #fff;
-    color: #333;
+	font-size: 13px;
+	font-weight: bold;
+	color: #E51937;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 .intro__dropdown {
 	display: flex;
 	justify-content: center;
 }
 
+@media (max-width: 768px) {
+	.conteiner {
+		max-width: 768px;
+	}
+	.header__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	.nav__link, .intro__desktop, .intro__mobile, .features__desktop, .features__mobile, .testdrive__desktop, .testdrive__mobile, .road__desktop, .road__mobile {
+		display: none;
+	}
+	.intro__ipad {
+		display: flex;
+		justify-content: center;
+	}
+	.paragraph__title {
+		font-size: 50px;
+	}
+	.testdrive__ipad, .features__ipad, .road__ipad {
+		display: block;
+	}
+	.btn {
+		display: inline-block;
+		padding: 14px 55px;
+		background-color: #E51937;
+
+		border: 2px solid #E51937;
+
+		font-size: 16px;
+		font-weight: bold;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	.intro__features {
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+	}
+	.features__img {
+		margin-left: 110px;
+	}
+	.features__text {
+		margin-bottom: 50px;
+	}
+	.features__img, .features__icon {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 375px) {
+	.conteiner {
+		max-width: 375px;
+	}
+	.header {
+		padding-top: 20px;
+	}
+	.header__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	.nav__link, .header__logo, .intro__desktop, .intro__ipad, .features__desktop, .features__ipad, .testdrive__desktop, .testdrive__ipad, .road__desktop, .road__ipad {
+		display: none;
+	}
+	.nav__burger {
+		margin: 0;
+	}
+	.intro__title {
+		font-size: 50px;
+	}
+	.intro__text {
+		font-size: 10px;
+		margin-bottom: 35px;
+	}
+	.intro__mobile {
+		display: flex;
+		justify-content: center;
+	}
+	.header__logo2, .features__mobile, .road__mobile, .testdrive__mobile {
+		display: block;
+	}
+	.features__img {
+		margin-left: 0;
+	}
+	.features__items {
+		margin-right: 40px;
+	}
+	.features__items2 {
+		margin-right: 10px;
+	}
+	.features__testdrive {
+		margin-right: 20px;
+	}
+	.paragraph__title {
+		font-size: 27px;
+	}
+	.paragraph__subtitle {
+		font-size: 15px;
+	}
+	.features__text {
+		font-size: 10px;
+	}
+	.btn {
+		padding: 10px 43px;
+		font-size: 13px;
+	}
+}
