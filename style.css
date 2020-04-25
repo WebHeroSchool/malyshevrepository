@@ -281,3 +281,78 @@ body {
 		font-size: 13px;
 	}
 }
+
+@media (max-width: 320px) {
+	.conteiner {
+		max-width: 320px;
+	}
+	.header {
+		padding-top: 20px;
+	}
+	.header__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	.nav__link, .header__logo, .intro__desktop, .intro__ipad, .features__desktop, .features__ipad, .testdrive__desktop, .testdrive__ipad, .road__desktop, .road__ipad {
+		display: none;
+	}
+	.nav__burger {
+		margin: 0;
+	}
+	.intro__title {
+		font-size: 50px;
+	}
+	.intro__text {
+		font-size: 10px;
+		margin-bottom: 35px;
+	}
+	.intro__mobile {
+		display: flex;
+		justify-content: center;
+		width: 310px;
+	}
+	.header__logo2, .features__mobile, .road__mobile, .testdrive__mobile {
+		display: block;
+	}
+	.logo2__tesla {
+		width: 125px;
+	}
+	.intro__features {
+		margin-bottom: 30px;
+	}
+	.features__img {
+		margin-left: 0;
+		margin-right: 5px;
+		margin-bottom: 10px;
+	}
+	.features__items {
+		margin-right: 20px;
+	}
+	.features__icon {
+		margin-right: 5px;
+		margin-bottom: 5px;
+	}
+	.features__items2 {
+		margin-right: 10px;
+	}
+	.features__testdrive {
+		margin-right: 20px;
+	}
+	.testdrive__mobile {
+		width: 120px;
+	}
+	.paragraph__title {
+		font-size: 27px;
+	}
+	.paragraph__subtitle {
+		font-size: 15px;
+	}
+	.features__text {
+		font-size: 9px;
+		margin-bottom: 30px;
+	}
+	.btn {
+		padding: 7px 34px;
+		font-size: 10px;
+	}
+}
